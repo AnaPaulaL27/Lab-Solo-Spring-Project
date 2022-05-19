@@ -14,14 +14,31 @@ public class Nandoca {
     //@Id defines primary key for this entity
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //sql will handle id for us + hibernate will communicate with sql to handle that
+    //fine-tuning the way primary keys are generated
 
+    //we want fields (columns)to be in table, hence mark it with @column
+    //if changing column name do @Column(name = "xyz...") + avoid trouble
+    //the @column alone says it's a column in the table, but the latter case, providing name, instructs it to override
+    // the name of "XYZ"
+
+    @Column
     private Long id;
-    private String firstname;
-    private String lastname;
-    private LocalDate DOB;
-    private int yearsExperience;
-    private int employeeNumber;
 
+    @Column
+    private String firstname;
+
+    @Column
+    private String lastname;
+
+    @Column
+    private LocalDate DOB;
+
+    @Column
+    private int yearsExperience;
+
+    @Column
+    private int employeeNumber;
 
 
     //relationship between Nandoca+ Feedback- One-many-  a Nandoca can have many feedbacks, but a feedback can only go to one Nandoca
@@ -106,3 +123,11 @@ public class Nandoca {
         this.customerFeedback = customerFeedback;
     }
 }
+
+
+//note that:
+
+//    “The @Column annotation is only for properties which will be mapped to columns in the database table.
+//    When we mark a property as @OneToMany, or @ManyToMany, that relationship is being handled by a separate
+//    join table, which is created by Hibernate, and not persisted to a column in the table, which is why we omit
+//    the @Column annotation in those instances.”
