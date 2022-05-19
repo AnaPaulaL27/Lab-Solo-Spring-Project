@@ -51,7 +51,7 @@ public class Nandoca {
 
     //no arg constructor- needed for underlying hibernate framework- uses it to create
     // an empty object + then it will set its fields
-    public Nandoca(){};
+    protected Nandoca(){};
 
     //arg constructor
     //did not pass id nor list through constructor, will add objects later in config-> databaseSeeder (DBSeeder)
