@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.List;
 
 //We need component annotation to make the class visible to spring
 //@Component-  allows Spring to automatically detect our custom beans.
@@ -107,8 +108,7 @@ public class DataLoader  implements ApplicationRunner {
 
 
         Feedback customerFeedback5 = new Feedback(LocalDate.of(2022, Month.FEBRUARY, 2), "Amanda T",
-                "As we entered the 'restaurant', we were greeted by a non-smiling staff member who abrasively " +
-                        "admonished us to sit downstairs.",
+                "Asked for a simple fork... took half an hour for the staff to get me one... Should've eaten at home!",
                 1, nandoca5);
 
 
@@ -151,40 +151,62 @@ public class DataLoader  implements ApplicationRunner {
                 5, nandoca11);
 
         Feedback customerFeedback13 = new Feedback(LocalDate.of(2022, Month.MAY, 16), "Cassie",
-                "Lovely bunch of people and food!",
+                "Lovely bunch of people and food! Yes to Nandosss! ",
                 4, nandoca12);
 
         Feedback customerFeedback14 = new Feedback(LocalDate.of(2022, Month.MAY, 16), "Samira Abdullah",
-                "mmmmh my chicken was a little off this time, but other than that, great!",
+                "well... my chicken was a little off this time, but other than that, great!",
                 3, nandoca13);
 
 
         Feedback customerFeedback15 = new Feedback(LocalDate.of(2022, Month.MAY, 17), "Ebenezer Salvador",
-                "Please... next time, I need more chips, and sauces!",
+                "Please... next time, I need more chips, and sauces. It's either that or I will be bringing my own!",
                 3, nandoca14);
 
         Feedback customerFeedback16 = new Feedback(LocalDate.of(2022, Month.MAY, 17), "Bridget S.",
                 "The small Nandino was to perfectionnn... my little one won't stop talking about it! Will definitely" +
-                        "be coming again!",
+                        "be coming here again, kudos to Nandos :)!",
+                5, nandoca15);
+
+        Feedback customerFeedback17 = new Feedback(LocalDate.of(2022, Month.MAY, 18), "Sam P.",
+                "Lovely people! Well deserved rating!",
                 5, nandoca15);
 
 
+        //assigning feedback to the Nandoca
 
+        nandoca1.setCustomerFeedback(List.of(customerFeedback1));
 
+        nandoca2.setCustomerFeedback(List.of(customerFeedback2));
 
+        nandoca3.setCustomerFeedback(List.of(customerFeedback3));
 
+        nandoca4.setCustomerFeedback(List.of(customerFeedback4));
 
+        nandoca5.setCustomerFeedback(List.of(customerFeedback5));
 
+        nandoca6.setCustomerFeedback(List.of(customerFeedback6, customerFeedback7));
+
+        nandoca7.setCustomerFeedback(List.of(customerFeedback8));
+
+        nandoca8.setCustomerFeedback(List.of(customerFeedback9));
+
+        nandoca9.setCustomerFeedback(List.of(customerFeedback10));
+
+        nandoca10.setCustomerFeedback(List.of(customerFeedback11));
+
+        nandoca11.setCustomerFeedback(List.of(customerFeedback12));
+
+        nandoca12.setCustomerFeedback(List.of(customerFeedback13));
+
+        nandoca13.setCustomerFeedback(List.of(customerFeedback14));
+
+        nandoca14.setCustomerFeedback(List.of(customerFeedback15));
+
+        nandoca15.setCustomerFeedback(List.of(customerFeedback16, customerFeedback17));
 
 
     }
-
-
-
-
-
-
-
 
 }
 
