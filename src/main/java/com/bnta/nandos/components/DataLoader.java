@@ -26,7 +26,8 @@ public class DataLoader  implements ApplicationRunner {
     //it glues layers of application
 
     @Autowired
-    private NandocaRepository nandocaRepository;
+    private NandocaRepository nandocaRepository;  //This will allow  us to pass objects of the type Nandoca to the
+    //NandocaRepository
 
     @Autowired
     private FeedbackRepository feedbackRepository;
@@ -174,6 +175,7 @@ public class DataLoader  implements ApplicationRunner {
 
 
         //assigning feedback to the Nandoca
+        //Nandocas have a list of customerFeedback
 
         nandoca1.setCustomerFeedback(List.of(customerFeedback1));
 
@@ -205,6 +207,10 @@ public class DataLoader  implements ApplicationRunner {
 
         nandoca15.setCustomerFeedback(List.of(customerFeedback16, customerFeedback17));
 
+        //save all Nandoca the the NandocaRepository
+
+        nandocaRepository.saveAll(List.of(nandoca1,nandoca2,nandoca3,nandoca4,nandoca5,nandoca6,nandoca7,nandoca8,
+                nandoca9, nandoca10,nandoca11,nandoca12,nandoca13,nandoca14,nandoca15));
 
     }
 
