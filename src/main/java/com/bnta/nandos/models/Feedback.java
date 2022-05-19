@@ -44,7 +44,7 @@ public class Feedback {
 
     //no arg constructor- needed for underlying hibernate framework- uses it to create
     // an empty object + then it will set its fields
-    public Feedback() {};
+    protected Feedback() {};
 
     //arg constructor
 
