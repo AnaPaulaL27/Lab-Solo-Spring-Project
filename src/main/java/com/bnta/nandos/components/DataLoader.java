@@ -41,7 +41,6 @@ public class DataLoader  implements ApplicationRunner {
         Nandoca nandoca2 = new Nandoca("Carlos", "D'silva", LocalDate.of(1982, Month.JANUARY,
                 28), 1, 67891);
 
-
         Nandoca nandoca3 = new Nandoca("Susana", "Pinto", LocalDate.of(1991, Month.OCTOBER,
                 7), 5,23456 );
 
@@ -53,7 +52,6 @@ public class DataLoader  implements ApplicationRunner {
 
         Nandoca nandoca6 = new Nandoca("Leila", "Hocksteal", LocalDate.of(1999, Month.SEPTEMBER,
                 8), 2, 77881);
-
 
         Nandoca nandoca7 = new Nandoca("Heather", "Wright", LocalDate.of(1993, Month.JUNE,
                 29), 1,73855 );
@@ -67,7 +65,6 @@ public class DataLoader  implements ApplicationRunner {
         Nandoca nandoca10 = new Nandoca("Precious", "Knight", LocalDate.of(1994, Month.JANUARY,
                 30), 4, 67857);
 
-
         Nandoca nandoca11 = new Nandoca("Ana", "Lima", LocalDate.of(1992, Month.FEBRUARY,
                 9), 3,95405 );
 
@@ -77,7 +74,6 @@ public class DataLoader  implements ApplicationRunner {
         Nandoca nandoca13 = new Nandoca("Precious", "Knight", LocalDate.of(1998, Month.APRIL,
                 1), 2, 87847);
 
-
         Nandoca nandoca14 = new Nandoca("Pedro", "Santos", LocalDate.of(1992, Month.FEBRUARY,
                 5), 3,93405 );
 
@@ -86,12 +82,103 @@ public class DataLoader  implements ApplicationRunner {
 
 
 
-
         //adding some Feedback
 
-        Feedback feedback1 = new Feedback(LocalDate.of(2022, Month.JANUARY, 21, "Katie Hull", ))
+        Feedback customerFeedback1 = new Feedback(LocalDate.of(2022, Month.JANUARY, 21), "Katie Hull",
+                "Tried out this place for the first time. Not too bad. Enjoyed the big meal platter that gives you a " +
+                        "variety of food to relish from. It's a stop over for lunch with friends kinda place. Definitely" +
+                        " revisiting again.", 4, nandoca1);
+
+
+        Feedback customerFeedback2 = new Feedback(LocalDate.of(2022, Month.FEBRUARY, 12), "Bruno J'Oliver",
+                "Beautiful place, friendly staff and delicious food. As good as all the other Nando’s.",
+                4, nandoca2);
+
+
+        Feedback customerFeedback3 = new Feedback(LocalDate.of(2022, Month.FEBRUARY, 12), "Chloe May",
+                "Great food for a good price! The chicken is really out of this world and you can eat without" +
+                        " fear. Remember that you can use some very tasty sauces to let your dish even better!",
+                4, nandoca3);
+
+        Feedback customerFeedback4 = new Feedback(LocalDate.of(2022, Month.FEBRUARY, 13), "Taco Lizard",
+                "As we entered the 'restaurant', we were greeted by a non-smiling staff member who abrasively " +
+                        "admonished us to sit downstairs.",
+                1, nandoca4);
+
+
+        Feedback customerFeedback5 = new Feedback(LocalDate.of(2022, Month.FEBRUARY, 2), "Amanda T",
+                "As we entered the 'restaurant', we were greeted by a non-smiling staff member who abrasively " +
+                        "admonished us to sit downstairs.",
+                1, nandoca5);
+
+
+        Feedback customerFeedback6 = new Feedback(LocalDate.of(2022, Month.MARCH, 9), "Nichole Smith",
+                "I like Nandos you cant normally go wrong, but I have had better than the one in Covent Garden." +
+                        "  There was a slight issue with the food and to be honest the attitude of the staff was not what " +
+                        "I expected, replacement was given but only as an after thought i think.  Being Friday night it " +
+                        "was very busy but has put me off wanting to go there again",
+                3, nandoca6);
+
+        Feedback customerFeedback7 = new Feedback(LocalDate.of(2022, Month.MARCH, 10), "John Mill",
+                "After waiting half my break to be served. I had to cancel my order after I was advised, that " +
+                        "I can not request the sections of chicken, I would like to eat.  I have requested specific pieces " +
+                        "of chicken before at other Nando’s and found this not to be a problem.  If I could give 0 stars I would.",
+                1, nandoca6);
+
+
+        Feedback customerFeedback8 = new Feedback(LocalDate.of(2022, Month.APRIL, 11), "Kamal Ibra",
+                "Service was great! Food tasty and the table was sanitised prior to being seated.",
+                5, nandoca7);
+
+        Feedback customerFeedback9 = new Feedback(LocalDate.of(2022, Month.APRIL, 12), "Brian",
+                "Nice ambiance. Even better food. Anything you eat here is guaranteed to be tasty!",
+                5, nandoca8);
+
+        Feedback customerFeedback10 = new Feedback(LocalDate.of(2022, Month.MAY, 12), "Gill Gaffney",
+                "Acceptable wait for a table at lunchtime in London, however the app didn't allow you to add " +
+                        "certain drinks so had to queue again for around 10 minutes to add a drink to the order. " +
+                        "In the restaurant's defence, as soon as I raised the matter, someone sorted it out very quickly." +
+                        " Food was delicious and we were served in good time.",
+                4, nandoca9);
+
+        Feedback customerFeedback11 = new Feedback(LocalDate.of(2022, Month.MAY, 15), "Melissa Alveres",
+                "I love eating at Nando’s in London and have never been disappointed the food is always piping " +
+                        "hot and very tasty and well cooked the service was very attentive although we did eat just before the cinema.",
+                5, nandoca10);
+
+        Feedback customerFeedback12 = new Feedback(LocalDate.of(2022, Month.MAY, 15), "Nathan Miles",
+                "Absolutely Amazinggggg!!!!! Lovely place to visit with the fam",
+                5, nandoca11);
+
+        Feedback customerFeedback13 = new Feedback(LocalDate.of(2022, Month.MAY, 16), "Cassie",
+                "Lovely bunch of people and food!",
+                4, nandoca12);
+
+        Feedback customerFeedback14 = new Feedback(LocalDate.of(2022, Month.MAY, 16), "Samira Abdullah",
+                "mmmmh my chicken was a little off this time, but other than that, great!",
+                3, nandoca13);
+
+
+        Feedback customerFeedback15 = new Feedback(LocalDate.of(2022, Month.MAY, 17), "Ebenezer Salvador",
+                "Please... next time, I need more chips, and sauces!",
+                3, nandoca14);
+
+        Feedback customerFeedback16 = new Feedback(LocalDate.of(2022, Month.MAY, 17), "Bridget S.",
+                "The small Nandino was to perfectionnn... my little one won't stop talking about it! Will definitely" +
+                        "be coming again!",
+                5, nandoca15);
+
+
+
+
+
+
+
+
+
 
     }
+
 
 
 
