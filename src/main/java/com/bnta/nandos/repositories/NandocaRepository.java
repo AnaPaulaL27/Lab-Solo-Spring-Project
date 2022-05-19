@@ -6,9 +6,18 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface NandocaRepository extends JpaRepository<Nandoca, Long> {
 }
 
-//Repository for Feedback model
+//JPaRepository is a generic class that takes any datatype, we provided a Feedback datatype and Long datatype
+// These come from @Entity class (class annotated with Entity), + @Entity class field (the datatype of the field
+// annotated with @ID in the class with @Entity annotation)
+
+// 'extends' means that this NandocaRepository extends jpaRepository, so it implements all methods of the of that
+// JPARepository class which allows us
+// to perform operations like findAll(), getByID(ID id) etc (like inheritance)
+
+//---
+//Repository for Nandoca model
 //it extends JPARepository
 //pass in 'type' arguments - it deals with Nandoca type + you have to give the
 //type of the primary key which is Long
 //That is all you need to do to get started, for hibernate to get a basic repository up + running
-//but then you can come back + add extra things
+//but... then you can come back + add extra things
