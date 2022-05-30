@@ -37,7 +37,7 @@ public class NandocaController {
                             HttpStatus.NOT_FOUND :
                             HttpStatus.OK);
         }
-//      GET/nandocas?yearsExperienceGreaterThan=2
+//      GET/nandocas?yearsExperience=2
         else if (yearsExperience != null) {
             {
                 return new ResponseEntity<>(nandocaRepository.findNandocaByYearsExperienceGreaterThan(yearsExperience),
