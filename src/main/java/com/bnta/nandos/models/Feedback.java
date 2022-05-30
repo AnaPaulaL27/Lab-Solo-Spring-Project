@@ -1,9 +1,14 @@
 package com.bnta.nandos.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+//In most cases, the name of the table in the database and the name of the entity won't be the same.
+//In these cases, we can specify the table name using the @Table annotation:
+@Table(name = "customerFeedback")
 
 public class Feedback {
 
@@ -34,22 +39,22 @@ public class Feedback {
     @Column
     private int rating;
 
+
     //relationship between Feedback + Nandoca- inverse
     @ManyToOne
     @JoinColumn(name = "nandoca_id")
     //property
     private Nandoca nandoca;
 
-    //Constructors (2)
+    //CONSTRUCTORS (2)
 
-    //no arg constructor- needed for underlying hibernate framework- uses it to create
+    //NO ARG CONSTRUCTOR- needed for underlying hibernate framework- uses it to create
     // an empty object + then it will set its fields
     protected Feedback() {};
 
-    //arg constructor
+    //ARG CONSTRUCTOR
 
-
-    public Feedback(LocalDate date, String name, String description, int rating, Nandoca nandoca) {
+    public Feedback(LocalDate date, String name, String description, int rating,  Nandoca nandoca) {
         this.date = date;
         this.name = name;
         this.description = description;
@@ -59,13 +64,8 @@ public class Feedback {
 
     //Getters + Setters
 
-
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public LocalDate getDate() {
@@ -111,7 +111,10 @@ public class Feedback {
 
 //note that:
 
-//    “The @Column annotation is only for properties which will be mapped to columns in the database table.
+//    The @Column annotation is only for properties which will be mapped to columns in the database table.
 //    When we mark a property as @OneToMany, or @ManyToMany, that relationship is being handled by a separate
 //    join table, which is created by Hibernate, and not persisted to a column in the table, which is why we omit
-//    the @Column annotation in those instances.”
+//    the @Column annotation in those instances.
+
+
+//Model is just a class that is going to be used to create objects that are saved to a database

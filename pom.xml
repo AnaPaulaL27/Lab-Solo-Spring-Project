@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bnta</groupId>
-	<artifactId>nandos</artifactId>
+	<artifactId>nandos_api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>nandos</name>
-	<description>A nondos Restaurant API</description>
+	<name>nandos_api</name>
+	<description>A Nandos Restaurant API</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
@@ -61,3 +61,5 @@
 	</build>
 
 </project>
+
+

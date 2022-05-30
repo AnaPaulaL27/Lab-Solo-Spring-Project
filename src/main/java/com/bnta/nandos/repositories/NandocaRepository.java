@@ -3,8 +3,19 @@ package com.bnta.nandos.repositories;
 import com.bnta.nandos.models.Nandoca;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface NandocaRepository extends JpaRepository<Nandoca, Long> {
+
+
+// find all nandocas with name Sandra
+    List<Nandoca> findNandocaByNameContainingIgnoreCase(String name);
+
+// find all nandocas with years of experience greater than 2
+    List<Nandoca> findNandocaByYearsExperienceGreaterThan(int yearsExperience);
+
 }
+
 
 //JPaRepository is a generic class that takes any datatype, we provided a Feedback datatype and Long datatype
 // These come from @Entity class (class annotated with Entity), + @Entity class field (the datatype of the field
