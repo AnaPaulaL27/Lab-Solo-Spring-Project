@@ -29,8 +29,7 @@ public class NandocaController {
             @RequestParam(required = false, name = "name") String name,
             @RequestParam(required = false, name = "yearsExperience") Integer yearsExperience
     ) {
-//        String name = requestParams.get("name");
-
+       
 //      GET/nandocas?name= SaNdRa
         if (name != null) {
             return new ResponseEntity<>(nandocaRepository.findNandocaByNameContainingIgnoreCase(name),
@@ -52,43 +51,6 @@ public class NandocaController {
                         HttpStatus.NOT_FOUND :
                         HttpStatus.OK);
     }
-
-
-
-
-
-
-//    @GetMapping
-//    public ResponseEntity<List<Nandoca>> getAllNandocasAndFilters(
-//            @RequestParam Map<String, String> requestParams, Integer yearsExperience
-//
-//    ) {
-//
-//        String name = requestParams.get("name");
-//
-//        //      GET /nandocas?name=Sandra
-//        if (name != null) {
-//            return new ResponseEntity<>(nandocaRepository.findNandocaByNameContainingIgnoreCase(name),
-//                    nandocaRepository.findNandocaByNameContainingIgnoreCase(name).isEmpty() ?
-//                            HttpStatus.NOT_FOUND :
-//                            HttpStatus.OK);
-//
-//        //      GET/nandocas?yearsExperienceGreaterThan=2
-//        } else if (yearsExperience != null) {
-//            {
-//                return new ResponseEntity<>(nandocaRepository.findNandocaByYearsExperienceGreaterThan(yearsExperience),
-//                        nandocaRepository.findNandocaByYearsExperienceGreaterThan(yearsExperience).isEmpty() ?
-//                                HttpStatus.NOT_FOUND :
-//                                HttpStatus.OK);
-//            }
-//        }
-//        //       GET /nandocas
-//        return new ResponseEntity<>(nandocaRepository.findAll(),
-//                nandocaRepository.findAll().isEmpty() ?
-//                        HttpStatus.NOT_FOUND :
-//                        HttpStatus.OK);
-//    }
-
 
 
     //SHOW
