@@ -1,14 +1,11 @@
 # Lab-Solo-Spring-Project
-A Nandos API
+Lab: Solo Spring Projec- Nandos API
 ----
 
 <p align="center">
   <img src="https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg" />
 </p>
 
-
-Lab: Solo Spring Project
-----
 
 Your task for this afternoon, and most of tomorrow, is to create your own API! The content of the data is up to you, but your database must contain at least two related tables.
 
