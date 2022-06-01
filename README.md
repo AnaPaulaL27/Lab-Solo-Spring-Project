@@ -2,8 +2,9 @@
 A Nandos API
 
 
-
-![alt text](https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg)
+<p align="center">
+  <img src="https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg" />
+</p>
 
 
 Lab: Solo Spring Project
