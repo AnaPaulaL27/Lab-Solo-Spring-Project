@@ -3,13 +3,11 @@ A Nandos API
 
 
 
-![](http://https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg/to/img.png)
+![alt text](http://https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg/to/img.png)
 
 
-
-Simple Nandos API One-Many relationship
-------
 Lab: Solo Spring Project
+----
 
 Your task for this afternoon, and most of tomorrow, is to create your own API! The content of the data is up to you, but your database must contain at least two related tables.
 
@@ -35,3 +33,8 @@ Further Reading/Watching
 Baeldung: Derived Query Methods in Spring Data JPA Repositories
 
 Thorben Janssen: Derived Queries
+
+
+Note
+--- 
+Due to time constraints, this project had to be scaled down to feature only a one-many relationship. However, to see how the project would feature both  many-many and one-many relationships, please check 'diagrams' in this repository. 
