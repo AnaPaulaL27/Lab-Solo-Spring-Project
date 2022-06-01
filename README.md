@@ -3,7 +3,7 @@ A Nandos API
 
 
 
-![alt text](http://https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg/to/img.png)
+![alt text](https://i2-prod.essexlive.news/incoming/article3441391.ece/ALTERNATES/s615b/2_Nandos.jpg)
 
 
 Lab: Solo Spring Project
