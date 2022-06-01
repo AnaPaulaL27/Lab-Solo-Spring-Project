@@ -35,9 +35,6 @@ Baeldung: Derived Query Methods in Spring Data JPA Repositories
 
 Thorben Janssen: Derived Queries
 
-![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-`
-
 Note
 --- 
 Due to time constraints, this project had to be scaled down to feature only a one-many relationship. However, to see how the project would feature both  many-many and one-many relationships, please check 'diagrams' in this repository. 
